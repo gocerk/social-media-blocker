@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "social-media-blocker",
+    "description": "A social media blocker extension",
+    "version": "0.0.1",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs",
+        "webNavigation"
+    ],
+    "background": {
+        "service_worker": "/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./assets/16x16.png",
+            "48": "./assets/48x48.png",
+            "128": "./assets/128x128.png"
+        }
+    }
+}
